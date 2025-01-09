@@ -1,6 +1,4 @@
 # ww-shapemapper
-# ShapeMapper WDL Workflow
-
 A WDL workflow for running ShapeMapper RNA structure probing analysis in parallel across multiple samples.
 
 ## Prerequisites
@@ -44,7 +42,6 @@ struct SampleInfo {
 
 - `memory_gb`: Memory allocation in GB (default: 16)
 - `cpu`: Number of CPU cores (default: 4)
-- `disk_size`: Disk space in GB (default: 100)
 
 ## Usage
 
@@ -90,16 +87,6 @@ For each sample, the workflow produces:
   - Summary statistics
   - Intermediate files
 
-## Docker Requirements
-
-The workflow expects a Docker image with ShapeMapper installed. Update the `docker` runtime parameter in the WDL with your specific image:
-
-```wdl
-runtime {
-    docker: "your-registry/shapemapper:version"
-}
-```
-
 ## Notes
 
 - Input FASTQ files should be quality-checked and adapter-trimmed if necessary
@@ -120,5 +107,4 @@ Common issues and solutions:
 
 If you use this workflow, please cite:
 
-- ShapeMapper: [Citation for the version you're using]
-- WDL workflow: [Your citation information]
+- ShapeMapper: Busan S, Weeks KM. Accurate detection of chemical modifications in RNA by mutational profiling (MaP) with ShapeMapper 2. RNA. 2018, 24(2):143-148.
