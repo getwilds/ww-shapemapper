@@ -1,0 +1,23 @@
+{
+  "ShapeMapperAnalysis.samples": [
+    {
+      "name": "sample1",
+      "target_fa": "sample1.fa",
+      "modified_r1": "sample1_mod_R1.fq",
+      "modified_r2": "sample1_mod_R2.fq",
+      "untreated_r1": "sample1_unmod_R1.fq",
+      "untreated_r2": "sample1_unmod_R2.fq"
+    },
+    {
+      "name": "sample2",
+      "target_fa": "sample2.fa",
+      "modified_r1": "sample2_mod_R1.fq",
+      "modified_r2": "sample2_mod_R2.fq",
+      "untreated_r1": "sample2_unmod_R1.fq",
+      "untreated_r2": "sample2_unmod_R2.fq"
+    }
+  ],
+  "ShapeMapperAnalysis.primers_fa": "primers.fa",
+  "ShapeMapperAnalysis.min_depth": 1000,
+  "ShapeMapperAnalysis.is_amplicon": true
+}
