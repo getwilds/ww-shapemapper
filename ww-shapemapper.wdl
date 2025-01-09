@@ -35,7 +35,6 @@ workflow ShapeMapperAnalysis {
     output {
         Array[File] shape_files = RunShapeMapper.shape_file
         Array[File] log_files = RunShapeMapper.log_file
-        Array[Directory] output_dirs = RunShapeMapper.output_dir
     }
 }
 

@@ -1,4 +1,6 @@
 # ww-shapemapper
+[![Project Status: Experimental – Useable, some support, not open to feedback, unstable API.](https://getwilds.org/badges/badges/experimental.svg)](https://getwilds.org/badges/#experimental)
+
 A WDL workflow for running ShapeMapper RNA structure probing analysis in parallel across multiple samples.
 
 ## Prerequisites
@@ -86,6 +88,16 @@ For each sample, the workflow produces:
   - Quality control plots
   - Summary statistics
   - Intermediate files
+
+## Docker Requirements
+
+The workflow uses the [`shapemapper`](https://github.com/getwilds/wilds-docker-library/blob/main/shapemapper/Dockerfile_2.3) Docker image from the [WILDS Docker Library](https://github.com/getwilds/wilds-docker-library), specifically `getwilds/shapemapper:2.3`. If you would like to provide your own, update the `docker` runtime parameter in the WDL with your specific image:
+
+```wdl
+runtime {
+    docker: "your-registry/shapemapper:version"
+}
+```
 
 ## Notes
 
